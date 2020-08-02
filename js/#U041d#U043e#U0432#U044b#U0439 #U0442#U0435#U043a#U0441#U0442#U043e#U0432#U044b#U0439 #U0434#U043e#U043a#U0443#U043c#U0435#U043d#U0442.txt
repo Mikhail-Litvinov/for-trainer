@@ -1,0 +1,17 @@
+//Pages//
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, navlink;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    navlinks = document.getElementsByClassName("navlink");
+    for (i = 0; i < navlinks.length; i++) {
+        navlinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
