@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main page
+    </title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/animation.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-embedded.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-ie7.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello.css">
+    <link rel="shortcut icon" href="img/logo-horef.png" type="image/png">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        <div class="header-style">
+            <div class="header-box">
+                <div class="header-container">
+                    <!--logo start-->
+                    <div class="logo-box">
+                        <a href="home.html">
+                           <span class="icon-logo logo-style"></span>
+                        </a>
+                    </div>
+                    <!--logo end-->
+                    <!-- navigation start -->
+                    <div class="navbar-box">
+                        <div class="navbar">
+                            <div class="button-box">
+                                <a href="home.html" class="underline"><button class="navbar-button">Home</button></a>
+                                <a href="about.html" class="underline"><button class="navbar-button">About</button></a>
+                                <div href="services.html" class="underline dropdown"><button class="navbar-button dropbtn">Services</button>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <a href="trainings.html">Trainings</a>
+                                            <li><a href="for women.html">For woman</a></li>
+                                            <li><a href="for man.html">For man</a></li>
+                                        </ul>
+                                        <a href="hockey.html">Hockey</a>
+                                        <a href="massage.html">Massage</a>
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="underline"><button class="navbar-button">Gallery</button></a>
+                                <a href="https://blog.testmike.space/" class="underline"><button class="navbar-button">Blog</button></a>
+                                <a href="contact.html" class="underline"><button class="navbar-button">Contact</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navigation end -->
+                    <!-- user bar start -->
+                    <div class="userbar-box">
+                        <div class="userbar-cont">
+                            <div class="userbar-button">
+                                <div class="icon-box">
+                                <a id="search" class="a-nav">
+                                    <span class="icon-search icons-style"></span>
+                                </a>
+                                </div>
+                                <div class="icon-box">
+                                <a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank" class="a-nav">
+                                    <span class="icon-inst icons-style"></span>
+                                </a>
+                                </div>
+                                <button id="joinUs" class="button-sub">
+                                    <p>Join us</p>
+                                </button>
+                            </div>
+                         </div>
+                    </div>
+                    <!-- user bar end -->
+                </div>
+            </div>
+       </div>
+        <!-- adaptive menu -->
+        <div class="header-adapt">
+            <div class="header-adapt-cont">
+                <div class="adapt-logo">
+                    <a href="home.html">
+                        <span class="icon-logo logo-style"></span>
+                     </a>
+                </div>
+                <div class="adapt-text">
+                    <h1 class="top-adapt-text">Home</h1>
+                </div>
+                <div class="adapt-menu">
+                        <div class="container" onclick="change(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                          </div>
+                </div>
+            </div>
+            <div class="adapt-nav" id="adaptNav">
+                <a href="home.html"><button class="adaptbar-button">Home</button></a>
+                <a href="about.html"><button class="adaptbar-button">About</button></a>
+                <button class="adaptbar-button accordionNav">Services<span class="accordion-indicator"></span></button>
+                <div class="accordionCont">
+                    <ul>
+                        <a href="trainings.html">Trainings</a>
+                        <li><a href="for women.html">For woman</a></li>
+                        <li><a href="for man.html">For man</a></li>
+                    </ul>
+                    <a href="hockey.html">Hockey</a>
+                    <a href="massage.html" class="end-li">Massage</a>
+                </div>
+                <a href="gallery.html"><button class="adaptbar-button">Gallery</button></a>
+                <a href="https://blog.testmike.space/"><button class="adaptbar-button">Blog</button></a>
+                <a href="contact.html"><button class="adaptbar-button">Contact</button></a>
+                <button id="joinUsAd" class="button-sub">
+                    <p>Join us</p>
+                </button>
+                <a id="searchAd" class="a-nav">
+                    <span class="icon-search icons-style"></span>
+                </a>
+                <a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank" class="a-nav">
+                    <span class="icon-inst icons-style"></span>
+                </a>
+            </div>
+        </div>
+        <!-- adaptive menu end -->
+    </header>
+    <!--header end-->
+    <!-- content start -->
+    <main>
+        <div class="carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+                <div><img src="img/slide1.jpg" style="width:100%">
+                <div class="text-slide">
+                    <h2 class="h2-slider">BIG MOTIVATION TEXT</h2>
+                    <p class="p-slider">Small text with some info</p>
+                    <button class="button-slider">It's doing somthing</button>
+                </div>
+                </div>
+                <div><img src="img/slide2.jpg" style="width:100%">
+                    <div class="text-slide">
+                        <h2 class="h2-slider">BIG MOTIVATION TEXT</h2>
+                        <p class="p-slider">Small text with some info</p>
+                        <button class="button-slider">It's doing somthing</button>
+                    </div>
+                </div>
+                <div><img src="img/slide3.jpg" style="width:100%">
+                    <div class="text-slide">
+                        <h2 class="h2-slider">BIG MOTIVATION TEXT</h2>
+                        <p class="p-slider">Small text with some info</p>
+                        <button class="button-slider">It's doing somthing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-wrapper">
+            <div class="home-text-title">
+                <h2>My trainings</h2>
+            </div>
+            <div class="home-cont-1">
+                <div class="for-woman">
+                    <a href="for women.html"><img src="img/home/2.jpg" alt="" class="img-home transform-img-home">
+                    <div class="text-img-1-w">
+                        <h2 class="h2-img-1">For woman</h2>
+                        <p class="p-img-1">There are many variations of passages of lorem
+                            Ipsum available, but the majority have suffered
+                            alteration.</p>
+                    </div></a>
+                </div>
+                <div class="for-man">
+                    <a href="for man.html"><img src="img/home/1.jpg" alt="" class="img-home transform-img-home">
+                    <div class="text-img-1-m">
+                        <h2 class="h2-img-1">For man</h2>
+                        <p class="p-img-1">There are many variations of passages of lorem
+                            Ipsum available, but the majority have suffered
+                            alteration.</p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-wrapper">
+            <div class="home-text-title">
+                <h2>Health or sport?</h2>
+            </div>
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/home/hockey.jpg" class="transform-img-choise">
+                    <div class="choise-text-h">
+                        <p class="p-choise">Learn more!</p>
+                        <a href="hockey.html"><button class="button-choise">Move</button></a>
+                    </div>
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/home/massage.jpg" class="transform-img-choise">
+                    <div class="choise-text-m">
+                        <p class="p-choise">Learn more!</p>
+                        <a href="massage.html"><button class="button-choise">Move</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="adapt-choise">
+                <div class="img-comp-adapt">
+                    <img src="img/home/hockey-adapt.jpg" class="transform-img-choise-adapt">
+                    <div class="choise-text-h-adapt">
+                        <p class="p-choise-adapt">Learn more!</p>
+                        <a href="hockey.html"><button class="button-choise-adapt">Move</button></a>
+                    </div>
+                </div>
+                <div class="img-comp-adapt">
+                    <img src="img/home/massage-adapt.jpg" class="transform-img-choise-adapt">
+                    <div class="choise-text-m-adapt">
+                        <p class="p-choise-adapt">Learn more!</p>
+                        <a href="massage.html"><button class="button-choise-adapt">Move</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-wrapper">
+            <div class="home-content-2">
+                <div class="home-text-title">
+                    <h2>My Features</h2>
+                </div>
+                <div class="features-cont">
+                    <div class="features-box">
+                        <div class="icon-box-features">
+                            <span class="cardio"></span>
+                        </div>
+                        <h3>Specific Muscles</h3>
+                        <p>There are many variations of passages of lorem Ipsum available.</p>
+                    </div>
+                    <div class="features-box">
+                        <div class="icon-box-features">
+                            <span class="weight"></span>
+                        </div>
+                        <h3>Weightlifting</h3>
+                        <p>There are many variations of passages of lorem Ipsum available.</p>
+                    </div>
+                    <div class="features-box">
+                        <div class="icon-box-features">
+                            <span class="bysicle"></span>
+                        </div>
+                        <h3>Cardio Exercises</h3>
+                        <p>There are many variations of passages of lorem Ipsum available.</p>
+                    </div>
+                    <div class="features-box">
+                        <div class="icon-box-features">
+                            <span class="physics"></span>
+                        </div>
+                        <h3>Flex Your Muscles</h3>
+                        <p>There are many variations of passages of lorem Ipsum available.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="home-wrapper">
+            <div class="home-text-title">
+                <h2>Prices</h2>
+            </div>
+            <div class="home-content-3">
+                <div class="card-wrapper">
+                    <div class="flipcard h">
+                        <div class="frontside">
+                            <div class="card-1-front">
+                                <div class="front-content">
+                                    <h3>Trainings</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="card-row-30">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <h3>1h of training</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-row-30">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <p>XXXX czk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-row-40">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <a href="trainings.html"><button class="button-card">Find more</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="flipcard h">
+                        <div class="frontside">
+                            <div class="card-2-front">
+                                <div class="front-content">
+                                    <h3>Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="card-row-30">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <h3>1h of massage</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-row-30">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <p>XXXX czk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-row-40">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <a href="massage.html"><button class="button-card">Find more</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="flipcard h">
+                        <div class="frontside">
+                            <div class="card-3-front">
+                                <div class="front-content">
+                                    <h3>Hockey</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card-back">
+                                <div class="back-content">
+                                    <div class="card-row-30">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <h3>1 training</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-row-30">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <p>XXXX czk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-row-40">
+                                        <div class="card-row-table">
+                                            <div class="row-table-cell">
+                                                <a href="hockey.html"><button class="button-card">Find more</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- content end -->
+    <!-- modal search start -->
+    <div id="modalsrch" class="modal-box">
+        <div class="modal-content">
+            <form action="action_page.php">
+                <span class="icon-search srch-icon"></span>
+                <input type="text" placeholder="Search..." name="search" class="search-cont">
+                <button class="search-button">Search</button>
+            </form>
+            <span class="closemodal">x</span>
+        </div>
+        </div>
+        <!-- modal search end -->
+        <!--modal box join-->
+        <div id="modalJoin" class="modalJoin">
+            <div class="modal-join-content">
+                <h3 class="text-modal">Join us!</h3>
+                <form action="subscribe.php" id="subscribe" method="POST">
+                    <input type="text" placeholder="example@gmail.com" name="email" class="email-box">
+                    <button class="modal-button-join" type="submit">
+                        <p>Join us</p>
+                    </button>
+                </form>
+                <span class="closemodal-join">x</span>
+            </div>
+        </div>
+        <!-- modal box join end -->
+        <!-- modal thanks-box -->
+        <div id="forSubscribe" class="forSubscribe">
+            <div class="FS-content">
+                <span class="closeThanks">&times;</span>
+                <div class="thnks-text"><p>Your subscription has been successfully completed!</p>
+                <p>Thank you!</p></div>
+            </div>
+        </div>
+        <div id="forContact" class="forContact">
+            <div class="FC-content">
+                <span class="closeCont">&times;</span>
+                <div class="thnks-text"><p>Thank you for contact me,</p>
+                <p>I'll replay as soon as possible!</p></div>
+            </div>
+        </div>
+        <div id="errorForm" class="errorForm">
+            <div class="error-content">
+                <span class="closeError">&times;</span>
+                <div class="thnks-text"><p>Ooops! Something went wrong...</p>
+                    <p>Please, try again in a few minuts! </p>
+                    <p>If you still have an issue, contact me by email: </p>
+                    <p>akrand.mac@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- modal thanks-box end -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                 <div class="footer-row-1">
+                     <div class="footer-colmn">
+                         <div class="footer-table" style="height: 80%;">
+                             <div class="footer-cell" style="vertical-align: top;">
+                                 <h2>Dmitry Shpilevoy</h2>
+                                 <p class="footer-address">Address</p>
+                                 <p class="footer-address">Czech Republic, Prague</p>
+                                 <a href="#" class="footer-address">+420 XXX XXX XXX</a>
+                                 <a href="#" class="footer-address">example@gmail.com</a>
+                             </div>
+                         </div>
+                         <div class="footer-table" style="height: 20%;">
+                             <div class="footer-cell">
+                                 <div class="footer-icon-box">
+                                     <ul>
+                                     <li><a href="https://www.facebook.com/" target="_blank"><i class="footer-icon-f"></i></a></li>
+                                     <li><a href="https://twitter.com/" target="_blank"><i class="footer-icon-t"></i></a></li>
+                                     <li><a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank"><i class="footer-icon-i"></i></a></li>
+                                     <li><a href="https://www.youtube.com/" target="_blank"><i class="footer-icon-y"></i></a></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="footer-colmn-2">
+                         <div class="footer-table">
+                             <div class="footer-cell" style="vertical-align: top; text-align: left;">
+                                 <ul class="useful-links ">
+                                     <h3>Useful links</h3>
+                                     <li><a href="about.html">About</a></li>
+                                     <li><a href="services.html">Services</a></li>
+                                     <li><a href="gallery.html">Gallery</a></li>
+                                     <li><a href="https://blog.testmike.space/">Blog</a></li>
+                                     <li><a href="contact.html">Contact</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="footer-colmn-3">
+                         <div class="footer-table">
+                             <div class="footer-cell" style="vertical-align: top; text-align: left;">
+                                 <h3>Subscribe</h3>
+                                 <form action="subscribe.php" id="subscribe-footer" method="POST" class="footer-form">
+                                     <input type="text" placeholder="Enter your email" class="footer-input" name="submail">
+                                     <button class="footer-button" type="submit">Subscribe</button>
+                                 </form>
+                                 <p class="foot-cub">By subscribing, you confirm your age and consent to receive updates on the site and promotional offers.</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="footer-row-2">
+                     <div class="footer-table">
+                         <div class="footer-cell copyright" style="text-align: center;">
+                             <p>Copyright &copy;2020 All rights reserved | This site is made by <a href="#">Mikhail Litvinov</a></p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slikmenu.js"></script>
+    <script src="js/slikchoise.js"></script>
+    <script>initComparisons();</script>
+    <script src="js/ajaxSub.js"></script>
+    <script src="js/thanks.js"></script>
+</body>
+
+</html>

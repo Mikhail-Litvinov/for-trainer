@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main page
+    </title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/pages.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/phone-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/phone-embedded.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/phone-ie7-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/phone-ie7.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/phone.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/animation.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-embedded.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-ie7.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello.css">
+    <link rel="shortcut icon" href="img/logo-horef.png" type="image/png">
+    
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        <div class="header-style">
+            <div class="header-box">
+                <div class="header-container">
+                    <!--logo start-->
+                    <div class="logo-box">
+                        <a href="home.html">
+                            <span class="icon-logo logo-style"></span>
+                        </a>
+                    </div>
+                    <!--logo end-->
+                    <!-- navigation start -->
+                    <div class="navbar-box">
+                        <div class="navbar">
+                            <div class="button-box">
+                                <a href="home.html" class="underline"><button class="navbar-button">Home</button></a>
+                                <a href="about.html" class="underline"><button class="navbar-button">About</button></a>
+                                <div href="services.html" class="underline dropdown"><button
+                                        class="navbar-button dropbtn">Services</button>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <a href="trainings.html">Trainings</a>
+                                            <li><a href="for women.html">For woman</a></li>
+                                            <li><a href="for man.html">For man</a></li>
+                                        </ul>
+                                        <a href="hockey.html">Hockey</a>
+                                        <a href="massage.html">Massage</a>
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="underline"><button
+                                        class="navbar-button">Gallery</button></a>
+                                <a href="https://blog.testmike.space/" class="underline"><button class="navbar-button">Blog</button></a>
+                                <a href="contact.html" class="underline"><button
+                                        class="navbar-button">Contact</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navigation end -->
+                    <!-- user bar start -->
+                    <div class="userbar-box">
+                        <div class="userbar-cont">
+                            <div class="userbar-button">
+                                <div class="icon-box">
+                                    <a id="search" class="a-nav">
+                                        <span class="icon-search icons-style"></span>
+                                    </a>
+                                </div>
+                                <div class="icon-box">
+                                    <a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank" class="a-nav">
+                                        <span class="icon-inst icons-style"></span>
+                                    </a>
+                                </div>
+                                <button id="joinUs" class="button-sub">
+                                    <p>Join us</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- user bar end -->
+                </div>
+            </div>
+        </div>
+        <!-- adaptive menu -->
+        <div class="header-adapt">
+            <div class="header-adapt-cont">
+                <div class="adapt-logo">
+                    <a href="home.html">
+                        <span class="icon-logo logo-style"></span>
+                    </a>
+                </div>
+                <div class="adapt-text">
+                    <h1 class="top-adapt-text">Contacts</h1>
+                </div>
+                <div class="adapt-menu">
+                    <div class="container" onclick="change(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="adapt-nav" id="adaptNav">
+                <a href="home.html"><button class="adaptbar-button">Home</button></a>
+                <a href="about.html"><button class="adaptbar-button">About</button></a>
+                <button class="adaptbar-button accordionNav">Services<span class="accordion-indicator"></span></button>
+                <div class="accordionCont">
+                    <ul>
+                        <a href="trainings.html">Trainings</a>
+                        <li><a href="for women.html">For woman</a></li>
+                        <li><a href="for man.html">For man</a></li>
+                    </ul>
+                    <a href="hockey.html">Hockey</a>
+                    <a href="massage.html" class="end-li">Massage</a>
+                </div>
+                <a href="gallery.html"><button class="adaptbar-button">Gallery</button></a>
+                <a href="https://blog.testmike.space/"><button class="adaptbar-button">Blog</button></a>
+                <a href="contact.html"><button class="adaptbar-button">Contact</button></a>
+                <button id="joinUsAd" class="button-sub">
+                    <p>Join us</p>
+                </button>
+                <a id="searchAd" class="a-nav">
+                    <span class="icon-search icons-style"></span>
+                </a>
+                <a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank" class="a-nav">
+                    <span class="icon-inst icons-style"></span>
+                </a>
+            </div>
+        </div>
+        <!-- adaptive menu end -->
+    </header>
+    <!--header end-->
+    <!-- content start -->
+    <main>
+        <div class="contacts-wrapper">
+            <div class="title-contacts">
+              <h2>Contacts</h2>
+            </div>
+            <div class="contacts-block">
+              <p>You can contact me by all following links</p>
+              <div class="flex-wrapper">
+                <div class="contacts-column-slim">
+                  <ul class="ul-contacts"> Contacts
+                    <li><a href=""><span class="fb-icon-cont"></span><p>Facebook</p></a></li>
+                    <li><a href=""><span class="inst-icon-cont"></span><p>Instagram</p></a></li>
+                    <li><a href=""><span class="mail-icon-cont"></span><p>example@gmail.com</p></a></li>
+                    <li><a href=""><span class="phone-icon-cont"></span><p>+420 999 999 999</p></a></li>
+                  </ul>
+                </div>
+                <div class="contacts-column-wide">
+                  <div class="addressContacts">
+                    <ul><p>Address</p>
+                      <li>Czech Republic, Prague</li>
+                      <li>Na Příkopě  17/1047</li>
+                      <li>110 00 Staré Město</li>
+                    </ul>
+                  </div>
+                  <div id="googleMap" class="mapStyle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-block">
+              <div class="second-contacts-title">
+                <h2>If you have some questions, please, contact me by following form</h2>
+              </div>
+              <div class="contact-form-wrapper">
+                <form action="./contact.php" class="contact-form" id="contactForm" method="post">
+                  <div class="flex-row">
+                    <div class="form-column">
+                      <input type="email" name="mail" id="mail" placeholder="example@gmail.com" class="contact-details-email" style="border-bottom: none; border-top-left-radius: 10px;" form="contactForm">
+                      <div class="flex-row"><select class="select-contact" form="contactForm" name="code">
+                        <option value="+420">+420</option>
+                        <option value="+93">+93</option>
+                        <option value="+355">+355</option>
+                        <option value="+21">+21</option>
+                        <option value="+684">+684</option>
+                        <option value="+376">+376</option>
+                        <option value="+244">+244</option>
+                        <option value="+1-264">+1-264</option>
+                        <option value="+1-268">+1-268</option>
+                        <option value="+374">+374</option>
+                        <option value="+54">+54</option>
+                        <option value="+61">+61</option>
+                        <option value="+43">+43</option>
+                        <option value="+994">+994</option>
+                        <option value="+1-242">+1-242</option>
+                        <option value="+375">+375</option>
+                        <option value="+32">+32</option>
+                      </select><input type="number" name="phone" id="" placeholder="000 000 000" class="contact-details-number" form="contactForm"></div>
+                    </div>
+                    <div class="form-column-2">
+                      <input type="submit" value="Send" class="contact-button" form="contactForm">
+                    </div>
+                  </div>
+                  <div class="flex-row">
+                    <textarea name="message" id="" cols="30" rows="10" class="text-area" form="contactForm" placeholder="Input your message here"></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+    </main>
+    <!-- content end -->
+    <!-- modal search start -->
+    <div id="modalsrch" class="modal-box">
+        <div class="modal-content">
+            <form action="action_page.php">
+                <span class="icon-search srch-icon"></span>
+                <input type="text" placeholder="Search..." name="search" class="search-cont">
+                <button class="search-button">Search</button>
+            </form>
+            <span class="closemodal">x</span>
+        </div>
+    </div>
+    <!-- modal search end -->
+    <!--modal box join-->
+    <div id="modalJoin" class="modalJoin">
+        <div class="modal-join-content">
+            <h3 class="text-modal">Join us!</h3>
+            <form action="subscribe.php" id="subscribe" method="POST">
+                <input type="text" placeholder="example@gmail.com" name="submail" class="email-box">
+                <button class="modal-button-join" type="submit">
+                    <p>Join us</p>
+                </button>
+            </form>
+            <span class="closemodal-join">x</span>
+        </div>
+    </div>
+    <!-- modal box join end -->
+    <!-- modal thanks-box -->
+        <div id="forSubscribe" class="forSubscribe">
+            <div class="FS-content">
+                <span class="closeThanks">&times;</span>
+                <div class="thnks-text"><p>Your subscription has been successfully completed!</p>
+                <p>Thank you!</p></div>
+            </div>
+        </div>
+        <div id="forContact" class="forContact">
+            <div class="FC-content">
+                <span class="closeCont">&times;</span>
+                <div class="thnks-text"><p>Thank you for contact me,</p>
+                <p>I'll replay as soon as possible!</p></div>
+            </div>
+        </div>
+        <div id="errorForm" class="errorForm">
+            <div class="error-content">
+                <span class="closeError">&times;</span>
+                <div class="thnks-text"><p>Ooops! Something went wrong...</p>
+                    <p>Please, try again in a few minuts! </p>
+                    <p>If you still have an issue, contact me by email: </p>
+                    <p>akrand.mac@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- modal thanks-box end -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-row-1">
+                    <div class="footer-colmn">
+                        <div class="footer-table" style="height: 80%;">
+                            <div class="footer-cell" style="vertical-align: top;">
+                                <h2>Dmitry Shpilevoy</h2>
+                                <p class="footer-address">Address</p>
+                                <p class="footer-address">Czech Republic, Prague</p>
+                                <a href="#" class="footer-address">+420 XXX XXX XXX</a>
+                                <a href="#" class="footer-address">example@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="footer-table" style="height: 20%;">
+                            <div class="footer-cell">
+                                <div class="footer-icon-box">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="footer-icon-f"></i></a></li>
+                                        <li><a href="https://twitter.com/" target="_blank"><i
+                                                    class="footer-icon-t"></i></a></li>
+                                        <li><a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank"><i
+                                                    class="footer-icon-i"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" target="_blank"><i
+                                                    class="footer-icon-y"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-colmn-2">
+                        <div class="footer-table">
+                            <div class="footer-cell" style="vertical-align: top; text-align: left;">
+                                <ul class="useful-links ">
+                                    <h3>Useful links</h3>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="https://blog.testmike.space/">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-colmn-3">
+                        <div class="footer-table">
+                            <div class="footer-cell" style="vertical-align: top; text-align: left;">
+                                <h3>Subscribe</h3>
+                                <form action="subscribe.php" id="subscribe-footer" method="POST" class="footer-form">
+                                    <input type="text" placeholder="Enter your email" class="footer-input" name="submail">
+                                    <button class="footer-button" type="submit">Subscribe</button>
+                                </form>
+                                <p class="foot-cub">By subscribing, you confirm your age and consent to receive updates
+                                    on the site and promotional offers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-row-2">
+                    <div class="footer-table">
+                        <div class="footer-cell copyright" style="text-align: center;">
+                            <p>Copyright &copy;2020 All rights reserved | This site is made by <a href="#">Mikhail
+                                    Litvinov</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slikmenu.js"></script>
+    <script src="js/slikchoise.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8XT8aQPdGps7hlkal2aKm0L-aLnDcU7w&callback=myMap" async defer></script>
+    <script>initComparisons();</script>
+    <script src="js/ajax.js"></script>
+    <script src="js/ajaxSub.js"></script>
+    <script src="js/thanks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main page
+    </title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/pages.css">
+    <link rel="stylesheet" href="style/services-gallery.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/animation.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-embedded.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello-ie7.css">
+    <link rel="stylesheet" href="style/fonts/Fontello/css/fontello.css">
+    <link rel="shortcut icon" href="img/logo-horef.png" type="image/png">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
+</head>
+
+<body>
+    <!--header start-->
+    <header id="header">
+        <div class="header-style">
+            <div class="header-box">
+                <div class="header-container">
+                    <!--logo start-->
+                    <div class="logo-box">
+                        <a href="home.html">
+                            <span class="icon-logo logo-style"></span>
+                        </a>
+                    </div>
+                    <!--logo end-->
+                    <!-- navigation start -->
+                    <div class="navbar-box">
+                        <div class="navbar">
+                            <div class="button-box">
+                                <a href="home.html" class="underline"><button class="navbar-button">Home</button></a>
+                                <a href="about.html" class="underline"><button class="navbar-button">About</button></a>
+                                <div href="services.html" class="underline dropdown"><button
+                                        class="navbar-button dropbtn">Services</button>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <a href="trainings.html">Trainings</a>
+                                            <li><a href="for women.html">For woman</a></li>
+                                            <li><a href="for man.html">For man</a></li>
+                                        </ul>
+                                        <a href="hockey.html">Hockey</a>
+                                        <a href="massage.html">Massage</a>
+                                    </div>
+                                </div>
+                                <a href="gallery.html" class="underline"><button
+                                        class="navbar-button">Gallery</button></a>
+                                <a href="https://blog.testmike.space/" class="underline"><button class="navbar-button">Blog</button></a>
+                                <a href="contact.html" class="underline"><button
+                                        class="navbar-button">Contact</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navigation end -->
+                    <!-- user bar start -->
+                    <div class="userbar-box">
+                        <div class="userbar-cont">
+                            <div class="userbar-button">
+                                <div class="icon-box">
+                                    <a id="search" class="a-nav">
+                                        <span class="icon-search icons-style"></span>
+                                    </a>
+                                </div>
+                                <div class="icon-box">
+                                    <a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank" class="a-nav">
+                                        <span class="icon-inst icons-style"></span>
+                                    </a>
+                                </div>
+                                <button id="joinUs" class="button-sub">
+                                    <p>Join us</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- user bar end -->
+                </div>
+            </div>
+        </div>
+        <!-- adaptive menu -->
+        <div class="header-adapt">
+            <div class="header-adapt-cont">
+                <div class="adapt-logo">
+                    <a href="home.html">
+                        <span class="icon-logo logo-style"></span>
+                    </a>
+                </div>
+                <div class="adapt-text">
+                    <h1 class="top-adapt-text">Services</h1>
+                </div>
+                <div class="adapt-menu">
+                    <div class="container" onclick="change(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="adapt-nav" id="adaptNav">
+                <a href="home.html"><button class="adaptbar-button">Home</button></a>
+                <a href="about.html"><button class="adaptbar-button">About</button></a>
+                <button class="adaptbar-button accordionNav">Services<span class="accordion-indicator"></span></button>
+                <div class="accordionCont">
+                    <ul>
+                        <a href="trainings.html">Trainings</a>
+                        <li><a href="for women.html">For woman</a></li>
+                        <li><a href="for man.html">For man</a></li>
+                    </ul>
+                    <a href="hockey.html">Hockey</a>
+                    <a href="massage.html" class="end-li">Massage</a>
+                </div>
+                <a href="gallery.html"><button class="adaptbar-button">Gallery</button></a>
+                <a href="https://blog.testmike.space/"><button class="adaptbar-button">Blog</button></a>
+                <a href="contact.html"><button class="adaptbar-button">Contact</button></a>
+                <button id="joinUsAd" class="button-sub">
+                    <p>Join us</p>
+                </button>
+                <a id="searchAd" class="a-nav">
+                    <span class="icon-search icons-style"></span>
+                </a>
+                <a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank" class="a-nav">
+                    <span class="icon-inst icons-style"></span>
+                </a>
+            </div>
+        </div>
+        <!-- adaptive menu end -->
+    </header>
+    <!--header end-->
+    <!-- content start -->
+    <main>
+        <div class="services-wrapper" id="wrapper">
+            <div class="servicesContent" id="servMenu">
+                <div class="text-title mobile-none">
+                    <h2>Services</h2>
+                </div>
+                <div class="button-services" onclick="openPage('women')">
+                    <img src="img/services/women-button.jpg" alt="" width="100%" height="100%" class="desk-button">
+                    <img src="img/services/women-button-media.jpg" alt="" width="100%" height="100%"class="media-button">
+                    <div class="button-serv-text">For women
+                        <span class="button-indicator-main" id="indMainWom"></span>
+                    </div>
+                </div>
+                <div class="button-services" onclick="openPage('men')">
+                    <img src="img/services/men-button.jpg" alt="" width="100%" height="100%" class="desk-button">
+                    <img src="img/services/men-button-media.jpg" alt="" width="100%" height="100%"class="media-button">
+                    <div class="button-serv-text">For men
+                        <span class="button-indicator-main" id="indMainMen"></span>
+                    </div>
+                </div>
+                <div class="button-services" onclick="openPage('massage')" id="defaultOpen">
+                    <img src="img/services/massage.jpg" alt="" width="100%" height="100%" class="desk-button">
+                    <img src="img/services/massage-media.jpg" alt="" width="100%" height="100%"class="media-button">
+                    <div class="button-serv-text">Massage
+                        <span class="button-indicator-main" id="indMainMas"></span>
+                    </div>
+                </div>
+                <div class="button-services" onclick="openPage('hockey')">
+                    <img src="img/services/hockey-button.jpg" alt="" width="100%" height="100%" class="desk-button">
+                    <img src="img/services/hockey-button-media.jpg" alt="" width="100%" height="100%"class="media-button">
+                    <div class="button-serv-text">Hockey
+                        <span class="button-indicator-main" id="indMainHock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-page" id="women">
+                <div class="page-content-wrapper">
+                    <a href="#header"><button class="button-remove" onclick="removePage('women')">
+                        <div class="button-table">
+                            <div class="button-cell">
+                                <span class="button-indicator-serv" id="indicator"></span>
+                            </div>
+                        </div>
+                    </button></a>
+                    <div class="page-content">
+                        <div class="services-content-box">
+                            <div class="serv-img-conteiner">
+                                <div class="about-text-title absolute-text">
+                                    <h2>Trainings for women</h2>
+                                </div>
+                                <img src="img/services/women-header.jpg" alt="" width="100%">
+                            </div>
+                            <Article class="services-article">
+                                <h2>For whom is it suitable?</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque minus
+                                    officia enim tempora quis molestiae! Totam id numquam animi architecto libero
+                                    adipisci mollitia inventore, earum minima esse ratione eos velit, aliquid dolore
+                                    fuga natus harum in quisquam consequuntur dolor ut! Porro nemo neque deleniti sequi
+                                    officia quibusdam quidem esse voluptate distinctio nihil velit laborum, repellendus
+                                    voluptatibus rem. Facilis iste ex aspernatur sunt quia nobis ipsam illo hic
+                                    repudiandae, perferendis ipsa vero deleniti omnis. Quia, illum necessitatibus
+                                    expedita ea voluptate consequatur ipsam dolor blanditiis eos assumenda a ipsa
+                                    laudantium, ipsum, dolorum voluptatum adipisci obcaecati alias. Maiores pariatur
+                                    odit eaque fugit?</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut odit quam
+                                    temporibus porro velit et, dolore rerum molestias, labore animi explicabo quibusdam
+                                    ut tempora accusamus adipisci id eos sapiente voluptas blanditiis alias magnam
+                                    aspernatur quo repellat. Harum quasi rerum cum possimus dolorum inventore quibusdam?
+                                    Odit nam culpa repudiandae cum nostrum? Voluptate quam, animi magni inventore
+                                    quaerat iusto magnam eum, natus libero ad sunt molestiae aliquid laudantium nihil
+                                    corporis perferendis quos. Eius iste ullam dolores nam doloribus voluptates
+                                    exercitationem cumque ab, quisquam, iusto, enim ut! Reiciendis sunt aperiam quasi
+                                    consectetur porro repudiandae nulla ipsum ullam harum odio, excepturi dignissimos
+                                    mollitia.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, suscipit. Qui
+                                    obcaecati blanditiis nesciunt veritatis sunt aspernatur quidem nostrum, ullam totam
+                                    esse nisi optio molestias autem commodi ipsam unde laboriosam nobis libero sit
+                                    reiciendis facere laborum mollitia! Quos numquam perferendis voluptatem sequi, nam
+                                    aspernatur tenetur velit quod recusandae ipsa fugiat reprehenderit laboriosam nihil,
+                                    iure esse cupiditate eaque nesciunt maxime nemo et deleniti ducimus nulla alias?
+                                    Perspiciatis, odit? Iusto nemo deserunt blanditiis amet repudiandae doloremque
+                                    laborum, ratione quis? At repellat, quas adipisci itaque explicabo fuga? Itaque
+                                    facere voluptates, enim nam iste unde quae autem ut aperiam esse tempore libero?
+                                    Reprehenderit, ut!</p>
+                            </Article>
+                            <div class="services-prices">
+                                <div class="prices-text-title">
+                                    <h2>Prices</h2>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 1 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 2 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 3 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                            </div>
+                            <div class="services-gallery">
+                                <div class="about-text-title">
+                                    <h2 class="m10-bot">Gallery</h2>
+                                    <div class="serGalleryCont">
+                                        <div class="women-gallery">
+                                            <div class="womContainer">
+                                              <!-- Full-width images with number text -->
+                                              <div class="womSlide">
+                                                <div class="numbertext">1 / 6</div>
+                                                  <img src="img/services/women/1.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="womSlide">
+                                                <div class="numbertext">2 / 6</div>
+                                                  <img src="img/services/women/2.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="womSlide">
+                                                <div class="numbertext">3 / 6</div>
+                                                  <img src="img/services/women/3.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="womSlide">
+                                                <div class="numbertext">4 / 6</div>
+                                                  <img src="img/services/women/4.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="womSlide">
+                                                <div class="numbertext">5 / 6</div>
+                                                  <img src="img/services/women/5.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="womSlide">
+                                                <div class="numbertext">6 / 6</div>
+                                                  <img src="img/services/women/6.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <!-- Next and previous buttons -->
+                                              <a class="womPrev" onclick="plusSlides(-1)"><span class="prevInd"></span></a>
+                                              <a class="womNext" onclick="plusSlides(1)"><span class="nextInd"></span></a>
+                                            
+                                              <!-- Image text -->
+                                              <div class="caption-container">
+                                                <p id="womCaption"></p>
+                                              </div>
+                                            
+                                              <!-- Thumbnail images -->
+                                              <div class="row">
+                                                <div class="column">
+                                                  <img class="womDemo" src="img/services/women/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="womDemo" src="img/services/women/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="womDemo" src="img/services/women/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="womDemo" src="img/services/women/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="womDemo" src="img/services/women/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="womDemo" src="img/services/women/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="image description">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-page" id="men">
+                <div class="page-content-wrapper">
+                    <a href="#header"><button class="button-remove" onclick="removePage('men')">
+                        <div class="button-table">
+                            <div class="button-cell">
+                                <span class="button-indicator-serv"></span>
+                            </div>
+                        </div>
+                    </button></a>
+                    <div class="page-content">
+                        <div class="services-content-box">
+                            <div class="serv-img-conteiner">
+                                <div class="about-text-title absolute-text">
+                                    <h2>Trainings for men</h2>
+                                </div>
+                                <img src="img/services/men-header.jpg" alt="" width="100%">
+                            </div>
+                            <Article class="services-article">
+                                <h2>For whom is it suitable?</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque minus
+                                    officia enim tempora quis molestiae! Totam id numquam animi architecto libero
+                                    adipisci mollitia inventore, earum minima esse ratione eos velit, aliquid dolore
+                                    fuga natus harum in quisquam consequuntur dolor ut! Porro nemo neque deleniti sequi
+                                    officia quibusdam quidem esse voluptate distinctio nihil velit laborum, repellendus
+                                    voluptatibus rem. Facilis iste ex aspernatur sunt quia nobis ipsam illo hic
+                                    repudiandae, perferendis ipsa vero deleniti omnis. Quia, illum necessitatibus
+                                    expedita ea voluptate consequatur ipsam dolor blanditiis eos assumenda a ipsa
+                                    laudantium, ipsum, dolorum voluptatum adipisci obcaecati alias. Maiores pariatur
+                                    odit eaque fugit?</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut odit quam
+                                    temporibus porro velit et, dolore rerum molestias, labore animi explicabo quibusdam
+                                    ut tempora accusamus adipisci id eos sapiente voluptas blanditiis alias magnam
+                                    aspernatur quo repellat. Harum quasi rerum cum possimus dolorum inventore quibusdam?
+                                    Odit nam culpa repudiandae cum nostrum? Voluptate quam, animi magni inventore
+                                    quaerat iusto magnam eum, natus libero ad sunt molestiae aliquid laudantium nihil
+                                    corporis perferendis quos. Eius iste ullam dolores nam doloribus voluptates
+                                    exercitationem cumque ab, quisquam, iusto, enim ut! Reiciendis sunt aperiam quasi
+                                    consectetur porro repudiandae nulla ipsum ullam harum odio, excepturi dignissimos
+                                    mollitia.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, suscipit. Qui
+                                    obcaecati blanditiis nesciunt veritatis sunt aspernatur quidem nostrum, ullam totam
+                                    esse nisi optio molestias autem commodi ipsam unde laboriosam nobis libero sit
+                                    reiciendis facere laborum mollitia! Quos numquam perferendis voluptatem sequi, nam
+                                    aspernatur tenetur velit quod recusandae ipsa fugiat reprehenderit laboriosam nihil,
+                                    iure esse cupiditate eaque nesciunt maxime nemo et deleniti ducimus nulla alias?
+                                    Perspiciatis, odit? Iusto nemo deserunt blanditiis amet repudiandae doloremque
+                                    laborum, ratione quis? At repellat, quas adipisci itaque explicabo fuga? Itaque
+                                    facere voluptates, enim nam iste unde quae autem ut aperiam esse tempore libero?
+                                    Reprehenderit, ut!</p>
+                            </Article>
+                            <div class="services-prices">
+                                <div class="prices-text-title">
+                                    <h2>Prices</h2>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 1 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 2 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 3 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                            </div>
+                            <div class="services-gallery">
+                                <div class="about-text-title">
+                                    <h2 class="m10-bot">Gallery</h2>
+                                    <div class="serGalleryCont">
+                                        <div class="men-gallery">
+                                            <div class="menContainer">
+                                              <!-- Full-width images with number text -->
+                                              <div class="menSlide">
+                                                <div class="numbertext">1 / 6</div>
+                                                  <img src="img/services/Men/9.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="menSlide">
+                                                <div class="numbertext">2 / 6</div>
+                                                  <img src="img/services/Men/8.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="menSlide">
+                                                <div class="numbertext">3 / 6</div>
+                                                  <img src="img/services/Men/7.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="menSlide">
+                                                <div class="numbertext">4 / 6</div>
+                                                  <img src="img/services/Men/10.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="menSlide">
+                                                <div class="numbertext">5 / 6</div>
+                                                  <img src="img/services/Men/11.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="menSlide">
+                                                <div class="numbertext">6 / 6</div>
+                                                  <img src="img/services/Men/12.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <!-- Next and previous buttons -->
+                                              <a class="menPrev" onclick="plusSlidesMen(-1)"><span class="prevInd"></span></a>
+                                              <a class="menNext" onclick="plusSlidesMen(1)"><span class="nextInd"></span></a>
+                                            
+                                              <!-- Image text -->
+                                              <div class="caption-container">
+                                                <p id="menCaption"></p>
+                                              </div>
+                                            
+                                              <!-- Thumbnail images -->
+                                              <div class="row">
+                                                <div class="column">
+                                                  <img class="menDemo" src="img/services/Men/9.jpg" style="width:100%" onclick="currentSlideMen(1)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="menDemo" src="img/services/Men/8.jpg" style="width:100%" onclick="currentSlideMen(2)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="menDemo" src="img/services/Men/7.jpg" style="width:100%" onclick="currentSlideMen(3)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="menDemo" src="img/services/Men/10.jpg" style="width:100%" onclick="currentSlideMen(4)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="menDemo" src="img/services/Men/11.jpg" style="width:100%" onclick="currentSlideMen(5)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="menDemo" src="img/services/Men/12.jpg" style="width:100%" onclick="currentSlideMen(6)" alt="image description">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-page" id="massage">
+                <div class="page-content-wrapper">
+                    <a href="#header"><button class="button-remove" onclick="removePage('massage')">
+                        <div class="button-table">
+                            <div class="button-cell">
+                                <span class="button-indicator-serv"></span>
+                            </div>
+                        </div>
+                    </button></a>
+                    <div class="page-content">
+                        <div class="services-content-box">
+                            <div class="serv-img-conteiner">
+                                <div class="about-text-title absolute-text">
+                                    <h2>Massage</h2>
+                                </div>
+                                <img src="img/services/massage-header.jpg" alt="" width="100%">
+                            </div>
+                            <Article class="services-article">
+                                <h2>For whom is it suitable?</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque minus
+                                    officia enim tempora quis molestiae! Totam id numquam animi architecto libero
+                                    adipisci mollitia inventore, earum minima esse ratione eos velit, aliquid dolore
+                                    fuga natus harum in quisquam consequuntur dolor ut! Porro nemo neque deleniti sequi
+                                    officia quibusdam quidem esse voluptate distinctio nihil velit laborum, repellendus
+                                    voluptatibus rem. Facilis iste ex aspernatur sunt quia nobis ipsam illo hic
+                                    repudiandae, perferendis ipsa vero deleniti omnis. Quia, illum necessitatibus
+                                    expedita ea voluptate consequatur ipsam dolor blanditiis eos assumenda a ipsa
+                                    laudantium, ipsum, dolorum voluptatum adipisci obcaecati alias. Maiores pariatur
+                                    odit eaque fugit?</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut odit quam
+                                    temporibus porro velit et, dolore rerum molestias, labore animi explicabo quibusdam
+                                    ut tempora accusamus adipisci id eos sapiente voluptas blanditiis alias magnam
+                                    aspernatur quo repellat. Harum quasi rerum cum possimus dolorum inventore quibusdam?
+                                    Odit nam culpa repudiandae cum nostrum? Voluptate quam, animi magni inventore
+                                    quaerat iusto magnam eum, natus libero ad sunt molestiae aliquid laudantium nihil
+                                    corporis perferendis quos. Eius iste ullam dolores nam doloribus voluptates
+                                    exercitationem cumque ab, quisquam, iusto, enim ut! Reiciendis sunt aperiam quasi
+                                    consectetur porro repudiandae nulla ipsum ullam harum odio, excepturi dignissimos
+                                    mollitia.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, suscipit. Qui
+                                    obcaecati blanditiis nesciunt veritatis sunt aspernatur quidem nostrum, ullam totam
+                                    esse nisi optio molestias autem commodi ipsam unde laboriosam nobis libero sit
+                                    reiciendis facere laborum mollitia! Quos numquam perferendis voluptatem sequi, nam
+                                    aspernatur tenetur velit quod recusandae ipsa fugiat reprehenderit laboriosam nihil,
+                                    iure esse cupiditate eaque nesciunt maxime nemo et deleniti ducimus nulla alias?
+                                    Perspiciatis, odit? Iusto nemo deserunt blanditiis amet repudiandae doloremque
+                                    laborum, ratione quis? At repellat, quas adipisci itaque explicabo fuga? Itaque
+                                    facere voluptates, enim nam iste unde quae autem ut aperiam esse tempore libero?
+                                    Reprehenderit, ut!</p>
+                            </Article>
+                            <div class="services-prices">
+                                <div class="prices-text-title">
+                                    <h2>Prices</h2>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 1 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 2 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 3 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                            </div>
+                            <div class="services-gallery">
+                                <div class="about-text-title">
+                                    <h2 class="m10-bot">Gallery</h2>
+                                    <div class="serGalleryCont">
+                                        <div class="mas-gallery">
+                                            <div class="masContainer">
+                                              <!-- Full-width images with number text -->
+                                              <div class="masSlide">
+                                                <div class="numbertext">1 / 6</div>
+                                                  <img src="img/services/Massage/1.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="masSlide">
+                                                <div class="numbertext">2 / 6</div>
+                                                  <img src="img/services/Massage/2.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="masSlide">
+                                                <div class="numbertext">3 / 6</div>
+                                                  <img src="img/services/Massage/3.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="masSlide">
+                                                <div class="numbertext">4 / 6</div>
+                                                  <img src="img/services/Massage/4.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="masSlide">
+                                                <div class="numbertext">5 / 6</div>
+                                                  <img src="img/services/Massage/5.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="masSlide">
+                                                <div class="numbertext">6 / 6</div>
+                                                  <img src="img/services/Massage/6.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <!-- Next and previous buttons -->
+                                              <a class="masPrev" onclick="plusSlidesMas(-1)"><span class="prevInd"></span></a>
+                                              <a class="masNext" onclick="plusSlidesMas(1)"><span class="nextInd"></span></a>
+                                            
+                                              <!-- Image text -->
+                                              <div class="caption-container">
+                                                <p id="masCaption"></p>
+                                              </div>
+                                            
+                                              <!-- Thumbnail images -->
+                                              <div class="row">
+                                                <div class="column">
+                                                  <img class="masDemo" src="img/services/Massage/1.jpg" style="width:100%" onclick="currentSlideMas(1)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="masDemo" src="img/services/Massage/2.jpg" style="width:100%" onclick="currentSlideMas(2)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="masDemo" src="img/services/Massage/3.jpg" style="width:100%" onclick="currentSlideMas(3)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="masDemo" src="img/services/Massage/4.jpg" style="width:100%" onclick="currentSlideMas(4)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="masDemo" src="img/services/Massage/5.jpg" style="width:100%" onclick="currentSlideMas(5)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="masDemo" src="img/services/Massage/6.jpg" style="width:100%" onclick="currentSlideMas(6)" alt="image description">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-page" id="hockey">
+                <div class="page-content-wrapper">
+                    <a href="#header"><button class="button-remove" onclick="removePage('hockey')">
+                        <div class="button-table">
+                            <div class="button-cell">
+                                <span class="button-indicator-serv"></span>
+                            </div>
+                        </div>
+                    </button></a>
+                    <div class="page-content">
+                        <div class="services-content-box">
+                            <div class="serv-img-conteiner">
+                                <div class="about-text-title absolute-text">
+                                    <h2>Hockey</h2>
+                                </div>
+                                <img src="img/services/hockey-header.jpg" alt="" width="100%">
+                            </div>
+                            <Article class="services-article">
+                                <h2>For whom is it suitable?</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque minus
+                                    officia enim tempora quis molestiae! Totam id numquam animi architecto libero
+                                    adipisci mollitia inventore, earum minima esse ratione eos velit, aliquid dolore
+                                    fuga natus harum in quisquam consequuntur dolor ut! Porro nemo neque deleniti sequi
+                                    officia quibusdam quidem esse voluptate distinctio nihil velit laborum, repellendus
+                                    voluptatibus rem. Facilis iste ex aspernatur sunt quia nobis ipsam illo hic
+                                    repudiandae, perferendis ipsa vero deleniti omnis. Quia, illum necessitatibus
+                                    expedita ea voluptate consequatur ipsam dolor blanditiis eos assumenda a ipsa
+                                    laudantium, ipsum, dolorum voluptatum adipisci obcaecati alias. Maiores pariatur
+                                    odit eaque fugit?</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut odit quam
+                                    temporibus porro velit et, dolore rerum molestias, labore animi explicabo quibusdam
+                                    ut tempora accusamus adipisci id eos sapiente voluptas blanditiis alias magnam
+                                    aspernatur quo repellat. Harum quasi rerum cum possimus dolorum inventore quibusdam?
+                                    Odit nam culpa repudiandae cum nostrum? Voluptate quam, animi magni inventore
+                                    quaerat iusto magnam eum, natus libero ad sunt molestiae aliquid laudantium nihil
+                                    corporis perferendis quos. Eius iste ullam dolores nam doloribus voluptates
+                                    exercitationem cumque ab, quisquam, iusto, enim ut! Reiciendis sunt aperiam quasi
+                                    consectetur porro repudiandae nulla ipsum ullam harum odio, excepturi dignissimos
+                                    mollitia.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, suscipit. Qui
+                                    obcaecati blanditiis nesciunt veritatis sunt aspernatur quidem nostrum, ullam totam
+                                    esse nisi optio molestias autem commodi ipsam unde laboriosam nobis libero sit
+                                    reiciendis facere laborum mollitia! Quos numquam perferendis voluptatem sequi, nam
+                                    aspernatur tenetur velit quod recusandae ipsa fugiat reprehenderit laboriosam nihil,
+                                    iure esse cupiditate eaque nesciunt maxime nemo et deleniti ducimus nulla alias?
+                                    Perspiciatis, odit? Iusto nemo deserunt blanditiis amet repudiandae doloremque
+                                    laborum, ratione quis? At repellat, quas adipisci itaque explicabo fuga? Itaque
+                                    facere voluptates, enim nam iste unde quae autem ut aperiam esse tempore libero?
+                                    Reprehenderit, ut!</p>
+                            </Article>
+                            <div class="services-prices">
+                                <div class="prices-text-title">
+                                    <h2>Prices</h2>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 1 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 2 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-colmn"><p>For 3 hour in week</p></div>
+                                    <div class="price-colmn"><p>XXXX czk</p></div>
+                                </div>
+                            </div>
+                            <div class="services-gallery">
+                                <div class="about-text-title">
+                                    <h2 class="m10-bot">Gallery</h2>
+                                    <div class="serGalleryCont">
+                                        <div class="hock-gallery">
+                                            <div class="hockContainer">
+                                              <!-- Full-width images with number text -->
+                                              <div class="hockSlide">
+                                                <div class="numbertext">1 / 6</div>
+                                                  <img src="img/services/Hockey/1.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="hockSlide">
+                                                <div class="numbertext">2 / 6</div>
+                                                  <img src="img/services/Hockey/2.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="hockSlide">
+                                                <div class="numbertext">3 / 6</div>
+                                                  <img src="img/services/Hockey/3.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="hockSlide">
+                                                <div class="numbertext">4 / 6</div>
+                                                  <img src="img/services/Hockey/4.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="hockSlide">
+                                                <div class="numbertext">5 / 6</div>
+                                                  <img src="img/services/Hockey/5.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <div class="hockSlide">
+                                                <div class="numbertext">6 / 6</div>
+                                                  <img src="img/services/Hockey/6.jpg" style="width:100%">
+                                              </div>
+                                            
+                                              <!-- Next and previous buttons -->
+                                              <a class="hockPrev" onclick="plusSlidesHock(-1)"><span class="prevInd"></span></a>
+                                              <a class="hockNext" onclick="plusSlidesHock(1)"><span class="nextInd"></span></a>
+                                            
+                                              <!-- Image text -->
+                                              <div class="caption-container">
+                                                <p id="hockCaption"></p>
+                                              </div>
+                                            
+                                              <!-- Thumbnail images -->
+                                              <div class="row">
+                                                <div class="column">
+                                                  <img class="hockDemo" src="img/services/Hockey/1.jpg" style="width:100%" onclick="currentSlideHock(1)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="hockDemo" src="img/services/Hockey/2.jpg" style="width:100%" onclick="currentSlideHock(2)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="hockDemo" src="img/services/Hockey/3.jpg" style="width:100%" onclick="currentSlideHock(3)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="hockDemo" src="img/services/Hockey/4.jpg" style="width:100%" onclick="currentSlideHock(4)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="hockDemo" src="img/services/Hockey/5.jpg" style="width:100%" onclick="currentSlideHock(5)" alt="image description">
+                                                </div>
+                                                <div class="column">
+                                                  <img class="hockDemo" src="img/services/Hockey/6.jpg" style="width:100%" onclick="currentSlideHock(6)" alt="image description">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- content end -->
+    <!-- modal search start -->
+    <div id="modalsrch" class="modal-box">
+        <div class="modal-content">
+            <form action="action_page.php">
+                <span class="icon-search srch-icon"></span>
+                <input type="text" placeholder="Search..." name="search" class="search-cont">
+                <button class="search-button">Search</button>
+            </form>
+            <span class="closemodal">x</span>
+        </div>
+    </div>
+    <!-- modal search end -->
+    <!--modal box join-->
+    <div id="modalJoin" class="modalJoin">
+        <div class="modal-join-content">
+            <h3 class="text-modal">Join us!</h3>
+            <form action="subscribe.php" id="subscribe" method="POST">
+                <input type="text" placeholder="example@gmail.com" name="email" class="email-box">
+                <button class="modal-button-join" type="submit">
+                    <p>Join us</p>
+                </button>
+            </form>
+            <span class="closemodal-join">x</span>
+        </div>
+    </div>
+    <!-- modal box join end -->
+    <!-- modal thanks-box -->
+        <div id="forSubscribe" class="forSubscribe">
+            <div class="FS-content">
+                <span class="closeThanks">&times;</span>
+                <div class="thnks-text"><p>Your subscription has been successfully completed!</p>
+                <p>Thank you!</p></div>
+            </div>
+        </div>
+        <div id="forContact" class="forContact">
+            <div class="FC-content">
+                <span class="closeCont">&times;</span>
+                <div class="thnks-text"><p>Thank you for contact me,</p>
+                <p>I'll replay as soon as possible!</p></div>
+            </div>
+        </div>
+        <div id="errorForm" class="errorForm">
+            <div class="error-content">
+                <span class="closeError">&times;</span>
+                <div class="thnks-text"><p>Ooops! Something went wrong...</p>
+                    <p>Please, try again in a few minuts! </p>
+                    <p>If you still have an issue, contact me by email: </p>
+                    <p>akrand.mac@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- modal thanks-box end -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-row-1">
+                    <div class="footer-colmn">
+                        <div class="footer-table" style="height: 80%;">
+                            <div class="footer-cell" style="vertical-align: top;">
+                                <h2>Dmitry Shpilevoy</h2>
+                                <p class="footer-address">Address</p>
+                                <p class="footer-address">Czech Republic, Prague</p>
+                                <a href="#" class="footer-address">+420 XXX XXX XXX</a>
+                                <a href="#" class="footer-address">example@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="footer-table" style="height: 20%;">
+                            <div class="footer-cell">
+                                <div class="footer-icon-box">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="footer-icon-f"></i></a></li>
+                                        <li><a href="https://twitter.com/" target="_blank"><i
+                                                    class="footer-icon-t"></i></a></li>
+                                        <li><a href="https://www.instagram.com/dmitry_shpilevoy/" target="_blank"><i
+                                                    class="footer-icon-i"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" target="_blank"><i
+                                                    class="footer-icon-y"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-colmn-2">
+                        <div class="footer-table">
+                            <div class="footer-cell" style="vertical-align: top; text-align: left;">
+                                <ul class="useful-links ">
+                                    <h3>Useful links</h3>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="https://blog.testmike.space/">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-colmn-3">
+                        <div class="footer-table">
+                            <div class="footer-cell" style="vertical-align: top; text-align: left;">
+                                <h3>Subscribe</h3>
+                                <form action="subscribe.php" id="subscribe-footer" method="POST" class="footer-form">
+                                    <input type="text" placeholder="Enter your email" class="footer-input" name="submail">
+                                    <button class="footer-button" type="submit">Subscribe</button>
+                                </form>
+                                <p class="foot-cub">By subscribing, you confirm your age and consent to receive updates
+                                    on the site and promotional offers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-row-2">
+                    <div class="footer-table">
+                        <div class="footer-cell copyright" style="text-align: center;">
+                            <p>Copyright &copy;2020 All rights reserved | This site is made by <a href="#">Mikhail
+                                    Litvinov</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slikmenu.js"></script>
+    <script src="js/slikchoise.js"></script>
+    <script src="js/pagesonclick.js"></script>
+    <script src="js/pagesGallery.js"></script>
+    <script src="js/deffaultOpen.js"></script>
+    <script>initComparisons();</script>
+    <script src="js/ajaxSub.js"></script>
+    <script src="js/thanks.js"></script>
+</body>
+
+</html>
