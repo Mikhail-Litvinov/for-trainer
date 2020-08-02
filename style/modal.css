@@ -1,0 +1,235 @@
+    /* thanks boxes*/
+    .forSubscribe {
+        display: block;
+        position: fixed;
+        z-index: 1004;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0);
+        transition: 0.5s ease-in-out;
+    }
+
+    .FS-content {
+        position: relative;
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 200px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid red;
+        -webkit-animation: pulsateBox 2.5s linear infinite;
+        animation: pulsateBox 2.5s linear infinite;
+    }
+
+    .thnks-text {
+        position: relative;
+        width: 100%;
+        top: 50%;
+        transform: translate(0, -50%)
+    }
+
+    .thnks-text p {
+        color: white;
+        text-align: center;
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .closeThanks {
+        color: white;
+        position: absolute;
+        font-size: 40px;
+        right: 20px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .closeThanks:hover {
+        color: red;
+        -webkit-animation: pulsate 2.5s linear infinite;
+        animation: pulsate 2.5s linear infinite;
+    }
+
+    .forContact {
+        display: block;
+        position: fixed;
+        z-index: 1004;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0);
+        transition: 0.5s ease-in-out;
+    }
+
+    .FC-content {
+        position: relative;
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 200px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid red;
+        -webkit-animation: pulsateBox 2.5s linear infinite;
+        animation: pulsateBox 2.5s linear infinite;
+        
+    }
+
+    .closeCont {
+        color: white;
+        position: absolute;
+        font-size: 40px;
+        right: 20px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .closeCont:hover {
+        color: red;
+        -webkit-animation: pulsate 2.5s linear infinite;
+        animation: pulsate 2.5s linear infinite;
+    }
+
+
+    /* thanks boxes end */
+
+    /* error */
+
+    .errorForm {
+        display: block;
+        position: fixed;
+        z-index: 1004;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0);
+        transition: 0.5s ease-in-out;
+    }
+
+    .error-content {
+        position: relative;
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 200px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid red;
+        -webkit-animation: pulsateBox 2.5s linear infinite;
+        animation: pulsateBox 2.5s linear infinite;
+    }
+
+    .closeError {
+        color: white;
+        position: absolute;
+        font-size: 40px;
+        right: 20px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .closeError:hover {
+        color: red;
+        -webkit-animation: pulsate 2.5s linear infinite;
+        animation: pulsate 2.5s linear infinite;
+    }
+
+    /* error end */
+    
+    @media screen and (max-width: 600px) {
+        .FS-content {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid red;
+            -webkit-animation: pulsateBox 2.5s linear infinite;
+            animation: pulsateBox 2.5s linear infinite;
+        }
+
+        .FC-content {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid red;
+            -webkit-animation: pulsateBox 2.5s linear infinite;
+            animation: pulsateBox 2.5s linear infinite;
+        }
+
+        .error-content {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid red;
+            -webkit-animation: pulsateBox 2.5s linear infinite;
+            animation: pulsateBox 2.5s linear infinite;
+        }
+
+        .thnks-text {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+        .FS-content {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid red;
+            -webkit-animation: pulsateBox 2.5s linear infinite;
+            animation: pulsateBox 2.5s linear infinite;
+        }
+
+        .FC-content {
+            position: relative;
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid red;
+            -webkit-animation: pulsateBox 2.5s linear infinite;
+            animation: pulsateBox 2.5s linear infinite;
+        }
+
+        .thnks-text {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .error-content {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid red;
+            -webkit-animation: pulsateBox 2.5s linear infinite;
+            animation: pulsateBox 2.5s linear infinite;
+        }
+    }

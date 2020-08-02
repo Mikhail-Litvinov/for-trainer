@@ -1,0 +1,13 @@
+
+.icon-logo:before { content: '\e802'; } /* '' */
+.icon-search:before { content: '\e803'; } /* '' */
+.icon-inst:before { content: '\e804'; } /* '' */
+.icon-angle-double-left:before { content: '\f100'; } /* '' */
+.icon-angle-double-right:before { content: '\f101'; } /* '' */
+.icon-bicycle:before { content: '\e80a'; } /* '' */
+.icon-cardio:before { content: '\e80b'; } /* '' */
+.icon-physics:before { content: '\e80c'; } /* '' */
+.icon-weight:before { content: '\e80d'; } /* '' */
+.icon-twitter:before { content: '\e811'; } /* '' */
+.icon-youtube:before { content: '\e812'; } /* '' */
+.icon-facebook:before { content: '\e813'; } /* '' */
